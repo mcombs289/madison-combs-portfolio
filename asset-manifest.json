@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/madison-combs-portfolio/static/css/main.964fdded.css",
-    "main.js": "/madison-combs-portfolio/static/js/main.fdbd74c4.js",
+    "main.css": "/madison-combs-portfolio/static/css/main.eef56da1.css",
+    "main.js": "/madison-combs-portfolio/static/js/main.3cbdd87c.js",
     "index.html": "/madison-combs-portfolio/index.html",
-    "main.964fdded.css.map": "/madison-combs-portfolio/static/css/main.964fdded.css.map",
-    "main.fdbd74c4.js.map": "/madison-combs-portfolio/static/js/main.fdbd74c4.js.map"
+    "main.eef56da1.css.map": "/madison-combs-portfolio/static/css/main.eef56da1.css.map",
+    "main.3cbdd87c.js.map": "/madison-combs-portfolio/static/js/main.3cbdd87c.js.map"
   },
   "entrypoints": [
-    "static/css/main.964fdded.css",
-    "static/js/main.fdbd74c4.js"
+    "static/css/main.eef56da1.css",
+    "static/js/main.3cbdd87c.js"
   ]
 }
