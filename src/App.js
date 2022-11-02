@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import "./index.css";
+import "./dark.css";
+import { motion } from "framer-motion";
 
-function App() {
+const App = () => {
+  const [isOn, setIsOn] = useState(false);
+  const toggleSwitch = () => {
+    setIsOn(!isOn);
+  };
+
+  const spring = {
+    type: "spring",
+    stiffness: 700,
+    damping: 30,
+  };
+
   return (
     <>
+      <div className="switch" data-ison={isOn} onClick={toggleSwitch}>
+        <motion.div className="handle" layout transition={spring} />
+      </div>
       <header class="main-header">
         <h1>
           <span>Madison Combs</span>
@@ -14,8 +31,8 @@ function App() {
       </header>
 
       <main class="container">
-        <section class="card">
-          <img src="/images/keepsake.png" alt="keepsake" />
+        <section className={isOn ? "card" : "dark-card"}>
+          <img src="https://i.ibb.co/0VywMkW/paint-3.png" alt="" />
           <div>
             <h3>Keepsake</h3>
             <p>
@@ -54,8 +71,8 @@ function App() {
           </div>
         </section>
 
-        <section class="card" data-aos="fade-left">
-          <img src="/images/bobaShoppe.png" alt="boba" />
+        <section className={isOn ? "card" : "dark-card"} data-aos="fade-left">
+          <img src="https://i.ibb.co/0VywMkW/paint-3.png" alt="" />
           <div>
             <h3>Acrylic Painting Two</h3>
             <p>
@@ -67,7 +84,7 @@ function App() {
           </div>
         </section>
 
-        <section class="card" data-aos="fade-right">
+        <section className={isOn ? "card" : "dark-card"} data-aos="fade-right">
           <img src="https://i.ibb.co/0VywMkW/paint-3.png" alt="" />
           <div>
             <h3>Acrylic Painting Three</h3>
@@ -80,7 +97,7 @@ function App() {
           </div>
         </section>
 
-        <section class="card" data-aos="fade-left">
+        <section className={isOn ? "card" : "dark-card"} data-aos="fade-left">
           <img src="https://i.ibb.co/5LkJFRP/paint-4.png" alt="" />
           <div>
             <h3>Acrylic Painting Four</h3>
@@ -93,7 +110,7 @@ function App() {
           </div>
         </section>
 
-        <section class="card" data-aos="fade-right">
+        <section className={isOn ? "card" : "dark-card"} data-aos="fade-right">
           <img src="https://i.ibb.co/61R8Q2y/paint-5.png" alt="" />
           <div>
             <h3>Acrylic Painting Five</h3>
@@ -108,6 +125,6 @@ function App() {
       </main>
     </>
   );
-}
+};
 
 export default App;
