@@ -27,13 +27,6 @@ const App = () => {
               alt="profpic"
             />
           )}
-          <br />
-          <h1>
-            <span>Madison Combs</span>
-          </h1>
-          <a href={resume} target="_blank" rel="noreferrer">
-            Open Second PDF
-          </a>
         </header>
 
         <main class="container">
