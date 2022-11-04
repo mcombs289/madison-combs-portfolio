@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/madison-combs-portfolio/static/css/main.ea1cf926.css",
-    "main.js": "/madison-combs-portfolio/static/js/main.3ea6b1f9.js",
-    "static/media/lightModeProf.png": "/madison-combs-portfolio/static/media/lightModeProf.70b88664596fd349aaf8.png",
-    "static/media/darkModeProf.png": "/madison-combs-portfolio/static/media/darkModeProf.2ac59e88d35a6083458d.png",
-    "static/media/keepsake.png": "/madison-combs-portfolio/static/media/keepsake.a3894d3b883b51c8c0a9.png",
-    "static/media/boba.png": "/madison-combs-portfolio/static/media/boba.4217c4474304e5772e42.png",
-    "static/media/TowerOfHanoi.png": "/madison-combs-portfolio/static/media/TowerOfHanoi.4d7431ac69fff366b276.png",
-    "static/media/Madison-Combs-Resume.pdf": "/madison-combs-portfolio/static/media/Madison-Combs-Resume.bb47de875863a900ce5a.pdf",
-    "index.html": "/madison-combs-portfolio/index.html",
-    "main.ea1cf926.css.map": "/madison-combs-portfolio/static/css/main.ea1cf926.css.map",
-    "main.3ea6b1f9.js.map": "/madison-combs-portfolio/static/js/main.3ea6b1f9.js.map"
+    "main.css": "/static/css/main.ea1cf926.css",
+    "main.js": "/static/js/main.5f856470.js",
+    "static/media/lightModeProf.png": "/static/media/lightModeProf.70b88664596fd349aaf8.png",
+    "static/media/darkModeProf.png": "/static/media/darkModeProf.2ac59e88d35a6083458d.png",
+    "static/media/keepsake.png": "/static/media/keepsake.a3894d3b883b51c8c0a9.png",
+    "static/media/boba.png": "/static/media/boba.4217c4474304e5772e42.png",
+    "static/media/TowerOfHanoi.png": "/static/media/TowerOfHanoi.4d7431ac69fff366b276.png",
+    "static/media/Madison-Combs-Resume.pdf": "/static/media/Madison-Combs-Resume.bb47de875863a900ce5a.pdf",
+    "index.html": "/index.html",
+    "main.ea1cf926.css.map": "/static/css/main.ea1cf926.css.map",
+    "main.5f856470.js.map": "/static/js/main.5f856470.js.map"
   },
   "entrypoints": [
     "static/css/main.ea1cf926.css",
-    "static/js/main.3ea6b1f9.js"
+    "static/js/main.5f856470.js"
   ]
 }
