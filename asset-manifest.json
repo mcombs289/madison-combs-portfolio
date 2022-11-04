@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/madison-combs-portfolio/static/css/main.8c5ed29b.css",
-    "main.js": "/madison-combs-portfolio/static/js/main.416f1be5.js",
+    "main.css": "/madison-combs-portfolio/static/css/main.e6f837df.css",
+    "main.js": "/madison-combs-portfolio/static/js/main.20a5e57c.js",
+    "static/media/lightModeProf.png": "/madison-combs-portfolio/static/media/lightModeProf.70b88664596fd349aaf8.png",
+    "static/media/darkModeProf.png": "/madison-combs-portfolio/static/media/darkModeProf.2ac59e88d35a6083458d.png",
     "static/media/keepsake.png": "/madison-combs-portfolio/static/media/keepsake.a3894d3b883b51c8c0a9.png",
-    "static/media/profilePic.png": "/madison-combs-portfolio/static/media/profilePic.3c68de568668d59199c8.png",
     "static/media/boba.png": "/madison-combs-portfolio/static/media/boba.4217c4474304e5772e42.png",
     "static/media/TowerOfHanoi.png": "/madison-combs-portfolio/static/media/TowerOfHanoi.4d7431ac69fff366b276.png",
     "static/media/Madison-Combs-Resume.pdf": "/madison-combs-portfolio/static/media/Madison-Combs-Resume.bb47de875863a900ce5a.pdf",
     "index.html": "/madison-combs-portfolio/index.html",
-    "main.8c5ed29b.css.map": "/madison-combs-portfolio/static/css/main.8c5ed29b.css.map",
-    "main.416f1be5.js.map": "/madison-combs-portfolio/static/js/main.416f1be5.js.map"
+    "main.e6f837df.css.map": "/madison-combs-portfolio/static/css/main.e6f837df.css.map",
+    "main.20a5e57c.js.map": "/madison-combs-portfolio/static/js/main.20a5e57c.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c5ed29b.css",
-    "static/js/main.416f1be5.js"
+    "static/css/main.e6f837df.css",
+    "static/js/main.20a5e57c.js"
   ]
 }
