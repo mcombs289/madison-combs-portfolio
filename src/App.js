@@ -17,7 +17,7 @@ const App = () => {
     <div className={isOn ? "dark-profile-body" : "profile-body"}>
       <NavigationBar isOn={isOn} setIsOn={setIsOn} />
       <div className="push-down">
-        <header class={isOn ? "dark-main-header" : "main-header"}>
+        <header className={isOn ? "dark-main-header" : "main-header"}>
           {isOn ? (
             <img className="profile-picture" src={darkModeProf} alt="profpic" />
           ) : (
@@ -29,7 +29,7 @@ const App = () => {
           )}
         </header>
 
-        <main class="container">
+        <main className="container">
           <section className={isOn ? "dark-card" : "card"}>
             <img src={Keepsake} alt="" />
             <div>
@@ -58,7 +58,7 @@ const App = () => {
                     },
                   }}
                   href="https://www.youtube.com/watch?v=jQnAIYv9v08&list=PLx0iOsdUOUmnMB_t8aLcctAYN-lXgZBUM&index=4"
-                  class={isOn ? "dark-btn" : "btn"}
+                  className={isOn ? "dark-btn" : "btn"}
                 >
                   Website
                 </motion.a>
@@ -72,7 +72,7 @@ const App = () => {
                     },
                   }}
                   href="https://www.youtube.com/watch?v=jQnAIYv9v08&list=PLx0iOsdUOUmnMB_t8aLcctAYN-lXgZBUM&index=4"
-                  class={isOn ? "dark-btn" : "btn"}
+                  className={isOn ? "dark-btn" : "btn"}
                 >
                   GitHub
                 </motion.a>
@@ -86,7 +86,7 @@ const App = () => {
                     },
                   }}
                   href="https://www.youtube.com/watch?v=jQnAIYv9v08&list=PLx0iOsdUOUmnMB_t8aLcctAYN-lXgZBUM&index=4"
-                  class={isOn ? "dark-btn" : "btn"}
+                  className={isOn ? "dark-btn" : "btn"}
                 >
                   YouTube
                 </motion.a>
@@ -115,7 +115,7 @@ const App = () => {
                     },
                   }}
                   href="https://www.youtube.com/watch?v=jQnAIYv9v08&list=PLx0iOsdUOUmnMB_t8aLcctAYN-lXgZBUM&index=4"
-                  class={isOn ? "dark-btn" : "btn"}
+                  className={isOn ? "dark-btn" : "btn"}
                 >
                   GitHub
                 </motion.a>
@@ -139,7 +139,7 @@ const App = () => {
               <div className="button-row">
                 <a
                   href="https://codepen.io/mcombs7/details/yrZpRK"
-                  class={isOn ? "dark-btn" : "btn"}
+                  className={isOn ? "dark-btn" : "btn"}
                 >
                   CodePen
                 </a>

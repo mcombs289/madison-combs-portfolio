@@ -23,12 +23,50 @@ const NavigationBar = ({ isOn, setIsOn }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  let width = window.innerWidth;
+  console.log("wid", width);
+
+  let balls = document.getElementsByClassName("ball");
+  document.onmousemove = function (event) {
+    let x = (event.clientX * 100) / window.innerWidth + "%";
+    let y = (event.clientY * 100) / window.innerHeight + "%";
+
+    for (let i = 0; i < 2; i++) {
+      balls[i].style.left = x;
+      balls[i].style.top = y;
+    }
+  };
+
   return (
     <Navbar
+      fluid
       className={`${fixed ? "sticky" : ""} ${isOn ? "dark-navbar" : "navbar"}`}
     >
-      <Row lg={12} style={{ display: "flex", flexDirection: "row" }}>
-        <Col lg={6} style={{ display: "flex", flexDirection: "row" }}>
+      <Row style={{ display: "flex", flexDirection: "row" }}>
+        <Col lg={4}>
+          {isOn ? (
+            <img style={{ height: "50px" }} src={lightname} alt="" />
+          ) : (
+            <img style={{ height: "50px" }} src={name} alt="" />
+          )}
+        </Col>
+        {window.innerWidth > 1000 ? (
+          <Col lg={4}>
+            <div className="eyes">
+              <div className="eye">
+                <div
+                  className={isOn ? "dark-ball ball" : "light-ball ball"}
+                ></div>
+              </div>
+              <div className="eye">
+                <div
+                  className={isOn ? "dark-ball ball" : "light-ball ball"}
+                ></div>
+              </div>
+            </div>
+          </Col>
+        ) : null}
+        <Col lg={4} className="toggle">
           <div className="switch" data-ison={isOn} onClick={toggleSwitch}>
             <motion.div className="handle" layout transition={spring} />
           </div>
@@ -52,13 +90,6 @@ const NavigationBar = ({ isOn, setIsOn }) => {
             >
               &#127774;
             </p>
-          )}
-        </Col>
-        <Col lg={6} style={{ marginLeft: "30%" }}>
-          {isOn ? (
-            <img style={{ height: "100px" }} src={lightname} alt="" />
-          ) : (
-            <img style={{ height: "100px" }} src={name} alt="" />
           )}
         </Col>
       </Row>

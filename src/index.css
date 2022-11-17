@@ -20,8 +20,16 @@
   padding: 1rem;
   background-color: #f5f5f5;
   border-bottom: #333 solid 1px;
+  display: flex;
+  flex-direction: row;
 }
 
+.toggle{
+  display: flex;
+  flex-direction: row ;
+  margin-left: auto; 
+  margin-right: 0;
+}
 
 a {
   color: #333;
@@ -165,4 +173,43 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.eyes{
+
+}
+
+.eye{
+  background-color: #fff;
+  width: 140px;
+  height: 70px;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.light-ball{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 15px solid #333;
+  transform: translate(-50%, -50% );
+}
+
+.dark-ball{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 15px solid rgb(0, 197, 36);
+  transform: translate(-50%, -50% );
 }
