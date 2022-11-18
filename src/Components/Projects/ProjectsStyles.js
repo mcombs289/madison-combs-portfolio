@@ -23,10 +23,12 @@ export const ProjectCard = styled.div`
   }
   img {
     filter: grayscale(100%);
+    transition: all 1.2s ease;
   }
   &:hover {
     img {
       filter: grayscale(0%);
+      transition: all 1.2s ease;
     }
   }
 `;
