@@ -7,15 +7,14 @@ import {
   ButtonRow,
   ProjectButton,
 } from "./ProjectsStyles";
+import { TfiNewWindow } from "react-icons/tfi";
+import img1 from "../../images/keepsake.png";
 
 const Features = (props) => {
   return (
     <ProjectContainer>
       <ProjectCard data-aos="fade-right">
-        <ProjectCardImage
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
-          alt=""
-        />
+        <ProjectCardImage src={img1} alt="" />
         <div>
           <h2>Keepsake</h2>
           <p>
@@ -45,7 +44,7 @@ const Features = (props) => {
               href="https://keepsake-2208.herokuapp.com/"
               target="_blank"
             >
-              Website
+              <TfiNewWindow />
             </ProjectButton>
             <ProjectButton
               as={motion.a}

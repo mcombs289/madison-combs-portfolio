@@ -6,7 +6,7 @@ import Socials from "./Components/Socials/Socials";
 import { ThemeProvider } from "styled-components";
 
 const LightTheme = {
-  pageBackground: "white",
+  pageBackground: "#fffaf6",
   eyeBackground: "#282c36",
   titleColor: "#dcg58b",
   tagLineColor: "black",
@@ -14,7 +14,7 @@ const LightTheme = {
 
 const DarkTheme = {
   pageBackground: "#282c36",
-  eyeBackground: "white",
+  eyeBackground: "#fffaf6",
   titleColor: "lightpink",
   tagLineColor: "lavender",
 };
