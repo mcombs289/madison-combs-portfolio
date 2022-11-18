@@ -3,8 +3,11 @@ import styled from "styled-components";
 export const ProjectContainer = styled.div`
   margin: auto;
   overflow: auto;
-  padding: 0 20rem;
+  padding: 0 10rem;
   background: ${(props) => props.theme.pageBackground};
+  @media screen and (max-width: 768px) {
+    padding: 0 2rem;
+  }
 `;
 
 export const ProjectCard = styled.div`
@@ -14,12 +17,21 @@ export const ProjectCard = styled.div`
   background: linear-gradient(131.66deg, #ffeec4 0%, #f8c9fa 100%);
   margin-bottom: 2rem;
   border-radius: 1rem;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
   &:nth-child(even) img {
     order: 2;
     border-bottom-left-radius: 0rem;
     border-top-left-radius: 0rem;
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
+    @media screen and (max-width: 768px) {
+      border-bottom-left-radius: 0rem;
+      border-bottom-right-radius: 0rem;
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
+    }
   }
   img {
     filter: grayscale(100%);
@@ -37,6 +49,10 @@ export const ProjectCardImage = styled.img`
   width: 100%;
   border-bottom-left-radius: 1rem;
   border-top-left-radius: 1rem;
+  @media screen and (max-width: 768px) {
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 1rem;
+  }
 `;
 
 export const ButtonRow = styled.div`

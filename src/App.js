@@ -2,6 +2,7 @@ import { useState } from "react";
 import DarkMode from "./Components/DarkMode/DarkMode";
 import Navbar from "./Components/NavigationBar/NavigationBar";
 import Projects from "./Components/Projects/Projects";
+import Socials from "./Components/Socials/Socials";
 import { ThemeProvider } from "styled-components";
 
 const LightTheme = {
@@ -27,9 +28,9 @@ function App() {
   const [theme, setTheme] = useState("light");
   return (
     <ThemeProvider theme={themes[theme]}>
+      <Socials />
       <Navbar theme={theme} setTheme={setTheme} />
       <DarkMode theme={theme} setTheme={setTheme} />
-
       <Projects />
     </ThemeProvider>
   );

@@ -17,7 +17,6 @@ export const Eye = styled.div`
   margin: 40px;
   border-radius: 50%;
   position: relative;
-  overflow: hidden;
 `;
 
 export const Ball = styled.div`

@@ -23,10 +23,13 @@ function DarkMode(props) {
           <Typed
             strings={[
               "Madison!  ",
-              "always learning!  ",
               "a Software Engineer!  ",
+              "Madison!  ",
               "a Designer!  ",
+              "Madison!  ",
               "a Gamer!  ",
+              "always learning!  ",
+              "Madison!  ",
             ]}
             typeSpeed={80}
             backSpeed={80}
