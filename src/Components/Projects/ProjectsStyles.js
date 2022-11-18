@@ -21,6 +21,14 @@ export const ProjectCard = styled.div`
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
   }
+  img {
+    filter: grayscale(100%);
+  }
+  &:hover {
+    img {
+      filter: grayscale(0%);
+    }
+  }
 `;
 
 export const ProjectCardImage = styled.img`
