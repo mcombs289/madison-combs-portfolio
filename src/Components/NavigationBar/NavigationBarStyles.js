@@ -21,14 +21,14 @@ export const Eye = styled.div`
 `;
 
 export const Ball = styled.div`
-  height: 30px;
-  width: 30px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   background-color: ${(props) => props.theme.pageBackground};
   transition: all 0.2s ease;
-  position: absolute;
-  border: 20px solid #333;
+  position: relative;
   top: 50%;
   left: 50%;
+  bottom: 10px;
   transform: translate(-50%, -50%);
 `;

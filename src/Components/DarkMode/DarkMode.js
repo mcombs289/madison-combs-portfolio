@@ -1,6 +1,7 @@
 import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi";
 import { Toggle, Page, Container } from "./DarkModeStyles";
+import Typed from "react-typed";
 
 function DarkMode(props) {
   function changeTheme() {
@@ -17,6 +18,21 @@ function DarkMode(props) {
   return (
     <Page>
       <Container>
+        <p>
+          Hello World, I'm{" "}
+          <Typed
+            strings={[
+              "Madison!  ",
+              "always learning!  ",
+              "a Software Engineer!  ",
+              "a Designer!  ",
+              "a Gamer!  ",
+            ]}
+            typeSpeed={80}
+            backSpeed={80}
+            loop
+          />
+        </p>
         <Toggle onClick={changeTheme}>{icon}</Toggle>
       </Container>
     </Page>
