@@ -1,11 +1,13 @@
 import { useState } from "react";
 import DarkMode from "./Components/DarkMode/DarkMode";
-import Navbar from "./Components/NavigationBar/NavigationBar";
+import EyeBalls from "./Components/Eyes/Eyes";
 import Projects from "./Components/Projects/Projects";
 import Socials from "./Components/Socials/Socials";
 import { ThemeProvider } from "styled-components";
 
 const LightTheme = {
+  leftOmbre: "#ffeec4",
+  rightOmbre: "#f8c9fa",
   pageBackground: "#fffaf6",
   eyeBackground: "#282c36",
   titleColor: "#dcg58b",
@@ -13,7 +15,9 @@ const LightTheme = {
 };
 
 const DarkTheme = {
-  pageBackground: "#282c36",
+  leftOmbre: "#142d69",
+  rightOmbre: "#008081",
+  pageBackground: "#000000",
   eyeBackground: "#fffaf6",
   titleColor: "lightpink",
   tagLineColor: "lavender",
@@ -29,7 +33,7 @@ function App() {
   return (
     <ThemeProvider theme={themes[theme]}>
       <Socials />
-      <Navbar theme={theme} setTheme={setTheme} />
+      <EyeBalls theme={theme} setTheme={setTheme} />
       <DarkMode theme={theme} setTheme={setTheme} />
       <Projects />
     </ThemeProvider>

@@ -1,10 +1,9 @@
 import React from "react";
-import { Eye, Eyes, Ball } from "./NavigationBarStyles";
+import { Eye, Eyes, Ball, Lash } from "./EyesStyles";
 
-const NavigationBar = (props) => {
-  console.log("document", document);
+const EyeBalls = (props) => {
   let balls = document.getElementsByClassName("ball");
-  document.onmousemove = function (event) {
+  document.onmousemove = (event) => {
     let x = (event.clientX * 100) / window.innerWidth + "%";
     let y = (event.clientY * 100) / window.innerHeight + "%";
 
@@ -16,6 +15,9 @@ const NavigationBar = (props) => {
 
   return (
     <Eyes>
+      <Lash />
+      <Lash />
+      <Lash />
       <Eye>
         <Ball className="ball"></Ball>
       </Eye>
@@ -23,4 +25,4 @@ const NavigationBar = (props) => {
   );
 };
 
-export default NavigationBar;
+export default EyeBalls;
