@@ -58,7 +58,7 @@ const Features = (props) => {
                   repeatType: "loop",
                 },
               }}
-              href="https://www.youtube.com/watch?v=jQnAIYv9v08&list=PLx0iOsdUOUmnMB_t8aLcctAYN-lXgZBUM&index=4"
+              href="https://github.com/mcombs289/capstone"
               target="_blank"
             >
               GitHub
@@ -108,7 +108,7 @@ const Features = (props) => {
                   repeatType: "loop",
                 },
               }}
-              href="https://www.youtube.com/watch?v=jQnAIYv9v08&list=PLx0iOsdUOUmnMB_t8aLcctAYN-lXgZBUM&index=4"
+              href="https://github.com/mcombs289/Boba-Shoppe"
             >
               GitHub
             </ProjectButton>
@@ -120,13 +120,20 @@ const Features = (props) => {
         <ProjectCardImage src={img3} alt="" />
 
         <div>
-          <h2>Acrylic Painting Three</h2>
+          <h2>Tower of Hanoi</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-            enim laudantium, animi veniam libero eveniet culpa unde perferendis
-            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-            officia. Ab, delectus.
+            As a solo project I created a front-end game inspired by the
+            mathematical puzzel "Tower of Hanoi", coined in the 19th century by
+            French mathematician Édouard Lucas. This project uses logic is used
+            to ensure moves made by the player abide by the rules of the puzzle,
+            as well as determine when the player has successfully completed the
+            puzzle.
+            <br />
           </p>
+          <p>
+            <b>Technologies:</b> HTML, CSS, Bootstrap, and JavaScript.
+          </p>
+
           <ButtonRow>
             <ProjectButton
               as={motion.a}
