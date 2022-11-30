@@ -1,6 +1,9 @@
 import styled, { keyframes } from "styled-components";
 
 export const Toggle = styled.button`
+  margin-top: 0;
+  margin-right: 2rem;
+  top: 0;
   cursor: pointer;
   height: 50px;
   width: 50px;
@@ -29,6 +32,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 2rem;
 `;
 
 export const Title = styled.h1`
@@ -75,6 +79,7 @@ export const ProfilePicture = styled.img`
   height: 400px;
   width: 400px;
   margin-bottom: 1rem;
+  margin-top: 2rem;
   border-radius: 1rem;
   animation: ${float} 2s ease-in-out infinite;
 `;
@@ -90,3 +95,5 @@ export const Shadow = styled.div`
   animation: ${grow} 2s ease infinite alternate;
   transition: opacity 0.3s, visibility 0.3s;
 `;
+
+export const Bio = styled.p``;

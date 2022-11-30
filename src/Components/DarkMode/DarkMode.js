@@ -7,6 +7,7 @@ import {
   Intro,
   HelloWorld,
   Shadow,
+  Bio,
   ProfilePicture,
 } from "./DarkModeStyles";
 import Typed from "react-typed";
@@ -27,8 +28,8 @@ function DarkMode(props) {
   return (
     <Page>
       <Container>
+        <Toggle onClick={changeTheme}>{icon}</Toggle>
         <ProfilePicture src={img1} />
-        <Shadow />
         <HelloWorld> Hello World,</HelloWorld>
         <Intro>
           <br />
@@ -51,7 +52,11 @@ function DarkMode(props) {
             loop
           />
         </Intro>
-        <Toggle onClick={changeTheme}>{icon}</Toggle>
+        <Bio>
+          Fullstack engineer with a passion for UI/UX design, a Computer Science
+          degree, and 1 year of professional experience as an Application
+          Specialist.
+        </Bio>
       </Container>
     </Page>
   );

@@ -13,7 +13,7 @@ export const StyledSocialList = styled.ul`
 `;
 
 export const Icon = styled.a`
-  margin-left: -18px;
+  margin-left: -13px;
   padding-bottom: 25px;
   stroke-width: 1px;
   color: #7293b8;
