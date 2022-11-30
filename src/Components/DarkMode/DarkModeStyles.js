@@ -1,17 +1,20 @@
 import styled, { keyframes } from "styled-components";
 
 export const Toggle = styled.button`
-  margin-top: 0;
+  position: absolute;
+  left: 3rem;
+  top: 50px;
+  margin-top: 1rem;
   margin-right: 2rem;
-  top: 0;
+
   cursor: pointer;
   height: 50px;
   width: 50px;
   border-radius: 50%;
   border: none;
   background-size: cover;
-  background-color: ${(props) => props.theme.titleColor};
-  color: ${(props) => props.theme.eyeBackground};
+  background-color: ${(props) => props.theme.toggleBackground};
+  color: ${(props) => props.theme.iconColor};
   &:focus {
     outline: none;
   }
@@ -76,12 +79,20 @@ const grow = keyframes`
 `;
 
 export const ProfilePicture = styled.img`
-  height: 400px;
-  width: 400px;
+  width: 90%;
   margin-bottom: 1rem;
-  margin-top: 2rem;
   border-radius: 1rem;
+  display: grid;
+  place-items: center;
   animation: ${float} 2s ease-in-out infinite;
+  @media screen and (max-width: 1024px) {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+  @media screen and (max-width: 600px) {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
 `;
 
 export const Shadow = styled.div`

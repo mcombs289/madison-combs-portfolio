@@ -9,17 +9,21 @@ const LightTheme = {
   leftOmbre: "#ffeec4",
   rightOmbre: "#f8c9fa",
   pageBackground: "#fffaf6",
-  eyeBackground: "#282c36",
+  toggleBackground: "#282c36",
+  iconColor: "#7293b8",
   titleColor: "#dcg58b",
+  boxColor: "#7293b8",
   tagLineColor: "black",
 };
 
 const DarkTheme = {
+  iconColor: "#070F22",
   leftOmbre: "#142d69",
   rightOmbre: "#008081",
   pageBackground: "#070F22",
-  eyeBackground: "#fffaf6",
+  toggleBackground: "#7293b8",
   titleColor: "lightpink",
+  boxColor: "lightpink",
   tagLineColor: "lavender",
 };
 
