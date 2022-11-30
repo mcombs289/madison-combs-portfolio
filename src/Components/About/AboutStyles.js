@@ -6,7 +6,7 @@ export const AboutContainer = styled.div`
   display: grid;
   grid-template-columns: 45% 50%;
   gap: 5%;
-  margin: 10rem;
+  padding: 10rem;
   @media screen and (max-width: 1424px) {
     grid-template-columns: 1fr;
     gap: 0;
@@ -42,7 +42,7 @@ export const AboutCard = styled.div`
   font-family: Arial, Helvetica, sans-serif;
 `;
 
-export const AboutBio = styled.div`
+export const AboutBio = styled.h3`
   color: ${(props) => props.theme.boxColor};
   margin-top: 2rem;
   margin: 1rem;
