@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.js": "/static/js/main.0de2b8a6.js",
+    "main.js": "/static/js/main.5d2b92f3.js",
     "static/media/keepsake.png": "/static/media/keepsake.1599679adb9922f8ad02.png",
+    "static/media/bobaScreenshot.png": "/static/media/bobaScreenshot.319572a908803c110a12.png",
+    "static/media/profilePicture.png": "/static/media/profilePicture.14517755301faddda747.png",
+    "static/media/Hanoi.png": "/static/media/Hanoi.c91faf53ce2ca4cbbd26.png",
     "index.html": "/index.html",
-    "main.0de2b8a6.js.map": "/static/js/main.0de2b8a6.js.map"
+    "main.5d2b92f3.js.map": "/static/js/main.5d2b92f3.js.map"
   },
   "entrypoints": [
-    "static/js/main.0de2b8a6.js"
+    "static/js/main.5d2b92f3.js"
   ]
 }
