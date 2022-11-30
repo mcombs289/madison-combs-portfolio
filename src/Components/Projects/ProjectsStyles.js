@@ -27,7 +27,7 @@ export const ProjectCard = styled.div`
     0 22.3px 17.9px rgba(3, 4, 94, 0.052), 0 41.8px 33.4px rgba(3, 4, 94, 0.016),
     0 10px 80px rgba(3, 4, 94, 0.12);
   transition: all 0.5s ease;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1180px) {
     display: block;
   }
   &:nth-child(even) img {
@@ -44,19 +44,13 @@ export const ProjectCard = styled.div`
     }
   }
   img {
-    filter: grayscale(100%);
     transition: all 1.2s ease;
-  }
-  &:hover {
-    img {
-      filter: grayscale(0%);
-      transition: all 1.2s ease;
-    }
   }
 `;
 
 export const ProjectCardImage = styled.img`
   width: 100%;
+  height: 100%;
   border-bottom-left-radius: 1rem;
   border-top-left-radius: 1rem;
   @media screen and (max-width: 768px) {

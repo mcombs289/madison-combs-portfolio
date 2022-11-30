@@ -1,44 +1,59 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Eyes = styled.div`
   position: absolute;
   align-items: center;
   justify-content: center;
-  top: 10rem;
+  top: 5rem;
   text-align: center;
   transform: translateY(-50%);
-  width: 100%;
+  width: 10%;
+`;
+
+// export const Eye = styled.div`
+//   background-color: ${(props) => props.theme.eyeBackground};
+//   transition: all 0.5s ease;
+//   width: 140px;
+//   height: 70px;
+//   display: inline-block;
+//   margin: 100px;
+//   border-radius: 50%;
+//   position: relative;
+//   padding: 1em;
+//   overflow: hidden;
+// `;
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 `;
 
 export const Eye = styled.div`
-  background-color: ${(props) => props.theme.eyeBackground};
-  transition: all 0.5s ease;
-  width: 140px;
-  height: 70px;
+  position: relative;
+  width: 50px;
+  height: 50px;
   display: inline-block;
-  margin: 100px;
+  background: ${(props) => props.theme.eyeBackground};
+  margin: 0 10px;
   border-radius: 50%;
-  position: relative;
-  padding: 1em;
-  overflow: hidden;
-`;
 
-export const Ball = styled.div`
-  height: 40px;
-  width: 40px;
-  margin: 1px;
-  border-radius: 50%;
-  background-color: ${(props) => props.theme.pageBackground};
-  transition: all 0.2s ease;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  bottom: 10px;
-  transform: translate(-50%, -50%);
-`;
-
-export const Lash = styled.div`
-  height: 40px;
-  width: 4px;
-  background-color: black;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: ${(props) => props.theme.pageBackground};
+    box-sizing: border-box;
+  }
+  &:hover {
+    animation: ${rotate} 1s linear infinite;
+  }
 `;

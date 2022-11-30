@@ -9,6 +9,8 @@ import {
 } from "./ProjectsStyles";
 import { TfiNewWindow } from "react-icons/tfi";
 import img1 from "../../images/keepsake.png";
+import img2 from "../../images/bobaScreenshot.png";
+import img3 from "../../images/Hanoi.png";
 
 const Features = (props) => {
   return (
@@ -81,18 +83,19 @@ const Features = (props) => {
       </ProjectCard>
 
       <ProjectCard data-aos="fade-left">
-        <ProjectCardImage
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
-          alt=""
-        />
+        <ProjectCardImage src={img2} alt="" />
 
         <div>
-          <h2>Acrylic Painting Two</h2>
+          <h2>Boba Shoppe E-commerce</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-            enim laudantium, animi veniam libero eveniet culpa unde perferendis
-            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-            officia. Ab, delectus.
+            An e-commerce application that sells Boba Tea with experience
+            dependent on if the user is logged in to an account or not.
+            Logged-in users can either be a customer or an admin. An admin is
+            allowed to make changes to the price and quantity of the products
+            sold. Was personally responsible for implementing and managing
+            RESTful API’s and the Redux store, creating a seamless flow of data
+            between the front and backend as well as authentication using JSON
+            Web Tokens.
           </p>
           <ButtonRow>
             <ProjectButton
@@ -114,7 +117,8 @@ const Features = (props) => {
       </ProjectCard>
 
       <ProjectCard data-aos="fade-right">
-        <img src={"TowerOfHanoi"} alt="" />
+        <ProjectCardImage src={img3} alt="" />
+
         <div>
           <h2>Acrylic Painting Three</h2>
           <p>

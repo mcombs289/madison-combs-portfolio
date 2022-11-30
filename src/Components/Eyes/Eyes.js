@@ -2,25 +2,21 @@ import React from "react";
 import { Eye, Eyes, Ball, Lash } from "./EyesStyles";
 
 const EyeBalls = (props) => {
-  let balls = document.getElementsByClassName("ball");
   document.onmousemove = (event) => {
-    let x = (event.clientX * 100) / window.innerWidth + "%";
-    let y = (event.clientY * 100) / window.innerHeight + "%";
-
-    for (let i = 0; i < 1; i++) {
-      balls[i].style.left = x;
-      balls[i].style.top = y;
-    }
+    const eye = document.querySelectorAll(".eye");
+    eye.forEach(function (eye) {
+      let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+      let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+      let radian = Math.atan2(event.pageX - x, event.pageY - y);
+      let rotation = radian * (180 / Math.PI) * -1 + 270;
+      eye.style.transform = "rotate(" + rotation + "deg)";
+    });
   };
 
   return (
     <Eyes>
-      <Lash />
-      <Lash />
-      <Lash />
-      <Eye>
-        <Ball className="ball"></Ball>
-      </Eye>
+      <Eye className="eye"></Eye>
+      <Eye className="eye"></Eye>
     </Eyes>
   );
 };

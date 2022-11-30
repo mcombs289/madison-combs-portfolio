@@ -22,6 +22,7 @@ export const Icon = styled.a`
   &:hover {
     font-size: 45px;
     color: #5297f0;
+    cursor: pointer;
   }
   @media screen and (max-width: 768px) {
     display: none;
