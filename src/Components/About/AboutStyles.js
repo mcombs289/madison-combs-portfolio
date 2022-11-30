@@ -6,7 +6,8 @@ export const AboutContainer = styled.div`
   display: grid;
   grid-template-columns: 45% 50%;
   gap: 5%;
-  @media screen and (max-width: 1024px) {
+  margin: 10rem;
+  @media screen and (max-width: 1424px) {
     grid-template-columns: 1fr;
     gap: 0;
   }

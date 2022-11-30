@@ -19,6 +19,11 @@ export const Toggle = styled.button`
     outline: none;
   }
   transition: all 0.5s ease;
+
+  @media screen and (max-width: 600px) {
+    left: 1rem;
+    top: 5px;
+  }
 `;
 
 export const Page = styled.div`
@@ -85,7 +90,7 @@ export const ProfilePicture = styled.img`
   display: grid;
   place-items: center;
   animation: ${float} 2s ease-in-out infinite;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1424px) {
     width: 50%;
     margin: 2rem auto 4rem;
   }
