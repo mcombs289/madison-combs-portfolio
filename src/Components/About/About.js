@@ -17,21 +17,19 @@ import resumePdf from "../../images/Madison_Combs_Resume.pdf";
 const About = (props) => {
   return (
     <AboutMe>
-      <h5>Get to know me</h5>
       <AboutContainer>
         <ProfilePicture src={img1} />
         <AboutContent>
           <AboutCards>
             <AboutCard>
               <IoMdSchool size={"3rem"} />
-              <h4>Education</h4>
-              <h5>Fordham University</h5>
-              <small>BSc in Computer Science</small>
+              <h2>Education</h2>
+              <h4>Fordham University - BSc in Computer Science</h4>
             </AboutCard>
             <AboutCard>
               <FaAward size={"3rem"} />
-              <h4>Industry Experience</h4>
-              <small>1 year</small>
+              <h2>Industry Experience</h2>
+              <h4>1 year</h4>
             </AboutCard>
           </AboutCards>
           <AboutBio>

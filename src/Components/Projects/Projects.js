@@ -6,6 +6,12 @@ import {
   ProjectCardImage,
   ButtonRow,
   ProjectButton,
+  ProjectHeader,
+  ProjectAbout,
+  ProjectTitle,
+  ProjectIcons,
+  Line,
+  LineContainer,
 } from "./ProjectsStyles";
 import { TfiNewWindow } from "react-icons/tfi";
 import img1 from "../../images/keepsake.png";
@@ -15,77 +21,82 @@ import img3 from "../../images/Hanoi.png";
 const Features = (props) => {
   return (
     <ProjectContainer>
+      <LineContainer>
+        <Line></Line>
+        <ProjectHeader>Projects</ProjectHeader>
+      </LineContainer>
       <ProjectCard data-aos="fade-right">
         <ProjectCardImage src={img1} alt="" />
-        <div>
-          <h2>Keepsake</h2>
-          <p>
-            A social media app meant to house general media reviews and
-            recommendations. While there are apps out there specialized to
-            specific forms of media, such as IMDB for movies and Goodreads for
-            books, Keepsake provides a centralized place for you to share your
-            thoughts and keep your friends updated on what you are watching and
-            reading.
-          </p>
-          <br />
-          <p>
-            <b>Technologies:</b> Javascript, React V6, React-Redux, Node,
-            Bootstrap, Express, Sequelize.
-          </p>
-          <ButtonRow>
-            <ProjectButton
-              as={motion.a}
-              whileHover={{
-                scale: [1, 1.1, 1],
-                transition: {
-                  duration: 1.5,
-                  repeat: "Infinity",
-                  repeatType: "loop",
-                },
-              }}
-              href="https://keepsake-2208.herokuapp.com/"
-              target="_blank"
-            >
-              <TfiNewWindow />
-            </ProjectButton>
-            <ProjectButton
-              as={motion.a}
-              whileHover={{
-                scale: [1, 1.1, 1],
-                transition: {
-                  duration: 1.5,
-                  repeat: "Infinity",
-                  repeatType: "loop",
-                },
-              }}
-              href="https://github.com/mcombs289/capstone"
-              target="_blank"
-            >
-              GitHub
-            </ProjectButton>
-            <ProjectButton
-              as={motion.a}
-              whileHover={{
-                scale: [1, 1.1, 1],
-                transition: {
-                  duration: 1.5,
-                  repeat: "Infinity",
-                  repeatType: "loop",
-                },
-              }}
-              href="https://www.youtube.com/watch?v=jQnAIYv9v08&list=PLx0iOsdUOUmnMB_t8aLcctAYN-lXgZBUM&index=4"
-              target="_blank"
-            >
-              YouTube
-            </ProjectButton>
-          </ButtonRow>
-        </div>
+        <ProjectAbout>
+          <ProjectIcons />
+          <div>
+            <ProjectTitle>Keepsake</ProjectTitle>
+            <p>
+              A social media app meant to house general media reviews and
+              recommendations. While there are apps out there specialized to
+              specific forms of media, such as IMDB for movies and Goodreads for
+              books, Keepsake provides a centralized place for you to share your
+              thoughts and keep your friends updated on what you are watching
+              and reading.
+            </p>
+            <br />
+            <p>
+              <b>Technologies:</b> Javascript, React V6, React-Redux, Node,
+              Bootstrap, Express, Sequelize.
+            </p>
+            <ButtonRow>
+              <ProjectButton
+                as={motion.a}
+                whileHover={{
+                  scale: [1, 1.1, 1],
+                  transition: {
+                    duration: 1.5,
+                    repeat: "Infinity",
+                    repeatType: "loop",
+                  },
+                }}
+                href="https://keepsake-2208.herokuapp.com/"
+                target="_blank"
+              >
+                <TfiNewWindow />
+              </ProjectButton>
+              <ProjectButton
+                as={motion.a}
+                whileHover={{
+                  scale: [1, 1.1, 1],
+                  transition: {
+                    duration: 1.5,
+                    repeat: "Infinity",
+                    repeatType: "loop",
+                  },
+                }}
+                href="https://github.com/mcombs289/capstone"
+                target="_blank"
+              >
+                GitHub
+              </ProjectButton>
+              <ProjectButton
+                as={motion.a}
+                whileHover={{
+                  scale: [1, 1.1, 1],
+                  transition: {
+                    duration: 1.5,
+                    repeat: "Infinity",
+                    repeatType: "loop",
+                  },
+                }}
+                href="https://www.youtube.com/watch?v=jQnAIYv9v08&list=PLx0iOsdUOUmnMB_t8aLcctAYN-lXgZBUM&index=4"
+                target="_blank"
+              >
+                YouTube
+              </ProjectButton>
+            </ButtonRow>
+          </div>
+        </ProjectAbout>
       </ProjectCard>
 
       <ProjectCard data-aos="fade-left">
-        <ProjectCardImage src={img2} alt="" />
-
-        <div>
+        <ProjectAbout>
           <h2>Boba Shoppe E-commerce</h2>
           <p>
             An e-commerce application that sells Boba Tea with experience
@@ -113,13 +124,14 @@ const Features = (props) => {
               GitHub
             </ProjectButton>
           </ButtonRow>
-        </div>
+        </ProjectAbout>
+
+        <ProjectCardImage src={img2} alt="" />
       </ProjectCard>
 
       <ProjectCard data-aos="fade-right">
         <ProjectCardImage src={img3} alt="" />
-
-        <div>
+        <ProjectAbout>
           <h2>Tower of Hanoi</h2>
           <p>
             As a solo project I created a front-end game inspired by the
@@ -150,7 +162,7 @@ const Features = (props) => {
               CodePen
             </ProjectButton>
           </ButtonRow>
-        </div>
+        </ProjectAbout>
       </ProjectCard>
     </ProjectContainer>
   );

@@ -30,10 +30,12 @@ export const Page = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 0;
+  padding: 0;
   width: 100%;
   background-color: ${(props) => props.theme.pageBackground};
   transition: all 0.5s ease;
+  font-family: "PT Serif", serif;
 `;
 
 export const Container = styled.div`

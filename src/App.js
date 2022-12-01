@@ -11,7 +11,7 @@ const LightTheme = {
   pageBackground: "#fffaf6",
   toggleBackground: "#282c36",
   iconColor: "#7293b8",
-  titleColor: "#dcg58b",
+  titleColor: "#7293b8",
   boxColor: "#7293b8",
   tagLineColor: "black",
 };

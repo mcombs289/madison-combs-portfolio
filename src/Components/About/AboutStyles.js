@@ -39,15 +39,13 @@ export const AboutCard = styled.div`
   padding-bottom: 3rem;
   text-align: center;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
 `;
 
 export const AboutBio = styled.h3`
-  color: ${(props) => props.theme.boxColor};
-  margin-top: 2rem;
+  color: rgb(114, 147, 184);
   margin: 1rem;
-  font-weight: 200;
-  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 3rem;
+  font-size: 25px;
 `;
 
 export const Resume = styled.button`

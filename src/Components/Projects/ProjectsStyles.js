@@ -1,9 +1,36 @@
 import styled from "styled-components";
 
+export const ProjectHeader = styled.h1`
+  position: relative;
+  display: inline-block;
+  padding: 25px;
+  background: ${(props) => props.theme.pageBackground};
+  font-size: 50px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 100;
+  color: ${(props) => props.theme.titleColor};
+`;
+
+export const LineContainer = styled.div`
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+`;
+
+export const Line = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 60%;
+  height: 3px;
+  background: ${(props) => props.theme.titleColor};
+`;
+
 export const ProjectContainer = styled.div`
   margin: auto;
   overflow: auto;
-  padding: 4rem 10rem;
+  padding: 0rem 10rem;
   background: ${(props) => props.theme.pageBackground};
   transition: all 0.5s ease;
   @media screen and (max-width: 768px) {
@@ -11,10 +38,25 @@ export const ProjectContainer = styled.div`
   }
 `;
 
+export const ProjectTitle = styled.div`
+  padding: 0.5rem;
+  width: 170px;
+  border-radius: 2rem;
+  letter-spacing: 1.5px;
+  background: #ceecfd;
+  color: #7293b8;
+  font-weight: 400;
+  font-size: 40px;
+`;
+
+export const ProjectIcons = styled.div`
+  display: flex;
+  flex-direction: columns;
+`;
+
 export const ProjectCard = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-template-columns: 50% 50%;
   background: linear-gradient(
     131.66deg,
     ${(props) => props.theme.leftOmbre} 0%,
@@ -30,7 +72,7 @@ export const ProjectCard = styled.div`
   @media screen and (max-width: 1180px) {
     display: block;
   }
-  &:nth-child(even) img {
+  &:nth-child(odd) img {
     order: 2;
     border-bottom-left-radius: 0rem;
     border-top-left-radius: 0rem;
@@ -48,6 +90,15 @@ export const ProjectCard = styled.div`
   }
 `;
 
+export const ProjectAbout = styled.div`
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: 2rem;
+  font-weight: 100;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+`;
+
 export const ProjectCardImage = styled.img`
   width: 100%;
   height: 100%;
@@ -63,19 +114,26 @@ export const ButtonRow = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
 `;
 
 export const ProjectButton = styled.button`
   display: inline-block;
   text-decoration: none;
+  letter-spacing: 1.5px;
   background: #f2bb18;
   color: white;
+  font-weight: 600;
   padding: 0.8rem 1.8rem;
   margin-top: 2rem;
+
   cursor: pointer;
   border: none;
   margin-right: 1rem;
   &:hover {
     opacity: 0.8;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 2rem;
   }
 `;
