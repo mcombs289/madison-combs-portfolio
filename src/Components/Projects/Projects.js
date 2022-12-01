@@ -9,7 +9,6 @@ import {
   ProjectHeader,
   ProjectAbout,
   ProjectTitle,
-  ProjectIcons,
   Line,
   LineContainer,
 } from "./ProjectsStyles";
@@ -28,74 +27,72 @@ const Features = (props) => {
       <ProjectCard data-aos="fade-right">
         <ProjectCardImage src={img1} alt="" />
         <ProjectAbout>
-          <ProjectIcons />
-          <div>
-            <ProjectTitle>Keepsake</ProjectTitle>
-            <p>
-              A social media app meant to house general media reviews and
-              recommendations. While there are apps out there specialized to
-              specific forms of media, such as IMDB for movies and Goodreads for
-              books, Keepsake provides a centralized place for you to share your
-              thoughts and keep your friends updated on what you are watching
-              and reading.
-            </p>
-            <br />
-            <p>
-              <b>Technologies:</b> Javascript, React V6, React-Redux, Node,
-              Bootstrap, Express, Sequelize.
-            </p>
-            <ButtonRow>
-              <ProjectButton
-                as={motion.a}
-                whileHover={{
-                  scale: [1, 1.1, 1],
-                  transition: {
-                    duration: 1.5,
-                    repeat: "Infinity",
-                    repeatType: "loop",
-                  },
-                }}
-                href="https://keepsake-2208.herokuapp.com/"
-                target="_blank"
-              >
-                <TfiNewWindow />
-              </ProjectButton>
-              <ProjectButton
-                as={motion.a}
-                whileHover={{
-                  scale: [1, 1.1, 1],
-                  transition: {
-                    duration: 1.5,
-                    repeat: "Infinity",
-                    repeatType: "loop",
-                  },
-                }}
-                href="https://github.com/mcombs289/capstone"
-                target="_blank"
-              >
-                GitHub
-              </ProjectButton>
-              <ProjectButton
-                as={motion.a}
-                whileHover={{
-                  scale: [1, 1.1, 1],
-                  transition: {
-                    duration: 1.5,
-                    repeat: "Infinity",
-                    repeatType: "loop",
-                  },
-                }}
-                href="https://www.youtube.com/watch?v=jQnAIYv9v08&list=PLx0iOsdUOUmnMB_t8aLcctAYN-lXgZBUM&index=4"
-                target="_blank"
-              >
-                YouTube
-              </ProjectButton>
-            </ButtonRow>
-          </div>
+          <ProjectTitle>Keepsake</ProjectTitle>
+          <p>
+            A social media app meant to house general media reviews and
+            recommendations. While there are apps out there specialized to
+            specific forms of media, such as IMDB for movies and Goodreads for
+            books, Keepsake provides a centralized place for you to share your
+            thoughts and keep your friends updated on what you are watching and
+            reading.
+          </p>
+          <br />
+          <p>
+            <b>Technologies:</b> Javascript, React V6, React-Redux, Node,
+            Bootstrap, Express, Sequelize.
+          </p>
+          <ButtonRow>
+            <ProjectButton
+              as={motion.a}
+              whileHover={{
+                scale: [1, 1.1, 1],
+                transition: {
+                  duration: 1.5,
+                  repeat: "Infinity",
+                  repeatType: "loop",
+                },
+              }}
+              href="https://keepsake-2208.herokuapp.com/"
+              target="_blank"
+            >
+              <TfiNewWindow />
+            </ProjectButton>
+            <ProjectButton
+              as={motion.a}
+              whileHover={{
+                scale: [1, 1.1, 1],
+                transition: {
+                  duration: 1.5,
+                  repeat: "Infinity",
+                  repeatType: "loop",
+                },
+              }}
+              href="https://github.com/mcombs289/capstone"
+              target="_blank"
+            >
+              GitHub
+            </ProjectButton>
+            <ProjectButton
+              as={motion.a}
+              whileHover={{
+                scale: [1, 1.1, 1],
+                transition: {
+                  duration: 1.5,
+                  repeat: "Infinity",
+                  repeatType: "loop",
+                },
+              }}
+              href="https://www.youtube.com/watch?v=jQnAIYv9v08&list=PLx0iOsdUOUmnMB_t8aLcctAYN-lXgZBUM&index=4"
+              target="_blank"
+            >
+              YouTube
+            </ProjectButton>
+          </ButtonRow>
         </ProjectAbout>
       </ProjectCard>
 
       <ProjectCard data-aos="fade-left">
+        <ProjectCardImage src={img2} alt="" />
         <ProjectAbout>
           <h2>Boba Shoppe E-commerce</h2>
           <p>
@@ -107,6 +104,11 @@ const Features = (props) => {
             RESTful API’s and the Redux store, creating a seamless flow of data
             between the front and backend as well as authentication using JSON
             Web Tokens.
+            <p>
+              <br />
+              <b>Technologies:</b> Javascript, React V5, React-Redux, Node,
+              Express, Sequelize, Stripe.
+            </p>
           </p>
           <ButtonRow>
             <ProjectButton
@@ -125,8 +127,6 @@ const Features = (props) => {
             </ProjectButton>
           </ButtonRow>
         </ProjectAbout>
-
-        <ProjectCardImage src={img2} alt="" />
       </ProjectCard>
 
       <ProjectCard data-aos="fade-right">
@@ -143,7 +143,7 @@ const Features = (props) => {
             <br />
           </p>
           <p>
-            <b>Technologies:</b> HTML, CSS, Bootstrap, and JavaScript.
+            <b>Technologies:</b> Javascript, HTML, CSS, and Bootstrap.
           </p>
 
           <ButtonRow>

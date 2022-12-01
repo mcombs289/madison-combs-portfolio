@@ -56,7 +56,8 @@ export const ProjectIcons = styled.div`
 
 export const ProjectCard = styled.div`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
   background: linear-gradient(
     131.66deg,
     ${(props) => props.theme.leftOmbre} 0%,
@@ -91,8 +92,6 @@ export const ProjectCard = styled.div`
 `;
 
 export const ProjectAbout = styled.div`
-  display: grid;
-  grid-template-columns: 20% 80%;
   margin: 2rem;
   font-weight: 100;
   font-size: 20px;
