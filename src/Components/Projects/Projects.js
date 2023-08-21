@@ -8,7 +8,6 @@ import {
   ProjectButton,
   ProjectHeader,
   ProjectAbout,
-  ProjectTitle,
   Line,
   LineContainer,
 } from "./ProjectsStyles";
@@ -27,7 +26,7 @@ const Features = (props) => {
       <ProjectCard data-aos="fade-right">
         <ProjectCardImage src={img1} alt="" />
         <ProjectAbout>
-          <ProjectTitle>Keepsake</ProjectTitle>
+          <h2>Keepsake</h2>
           <p>
             A social media app meant to house general media reviews and
             recommendations. While there are apps out there specialized to
@@ -42,7 +41,7 @@ const Features = (props) => {
             Bootstrap, Express, Sequelize.
           </p>
           <ButtonRow>
-            <ProjectButton
+            {/* <ProjectButton
               as={motion.a}
               whileHover={{
                 scale: [1, 1.1, 1],
@@ -56,7 +55,7 @@ const Features = (props) => {
               target="_blank"
             >
               <TfiNewWindow />
-            </ProjectButton>
+            </ProjectButton> */}
             <ProjectButton
               as={motion.a}
               whileHover={{
