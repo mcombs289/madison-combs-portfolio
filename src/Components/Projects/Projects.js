@@ -11,7 +11,6 @@ import {
   Line,
   LineContainer,
 } from "./ProjectsStyles";
-import { TfiNewWindow } from "react-icons/tfi";
 import img1 from "../../images/keepsake.png";
 import img2 from "../../images/bobaScreenshot.png";
 import img3 from "../../images/Hanoi.png";
